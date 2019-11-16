@@ -1,0 +1,14 @@
+#!/bin/bash
+
+FROM=$1
+TO=$2
+PATTERN=$3
+CD=$4
+
+if [ $CD == "cp" ]
+    then find $FROM -type f -name $PATTERN -exec cp {} $TO \;
+elif [ $CD == "mv" ]
+    then find $FROM -type f -name $PATTERN -exec mv {} $TO \;
+elif [ $CD == "rm" ]
+    then find $FROM -type f -name $PATTERN -exec rm {} \;
+fi
