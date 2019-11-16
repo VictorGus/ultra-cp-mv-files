@@ -1,6 +1,6 @@
-##This script allows you to copy, move or remove files matching certain pattern
+## This script allows you to copy, move or remove files matching certain pattern
 
-###Usage
+### Usage
 
 Move script file to your /usr/bin/ directory
 and then it can be used the following way:
@@ -8,7 +8,7 @@ and then it can be used the following way:
 
 *For rm command dir_from and dir_to are supposed to be same and they must be specified*
 
-###Example 
+### Example 
 ```ucp ./src ./resources "vs.*" mv```
 
 All files with name containing vs. will be moved to resources directory
